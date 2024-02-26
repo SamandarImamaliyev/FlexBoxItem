@@ -1,7 +1,7 @@
 header {
     position: sticky;
     top: 0;
-    z-index: 1;
+    z-index: 2;
 }
 
 .header-container {
@@ -95,13 +95,14 @@ main h2 {
 .projects {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    row-gap: 40px;
+    column-gap: 10px;
     justify-content: center;
 }
 
 .projects div {
     width: 300px;
-    height: 250px;
+    height: 201px;
     position: relative;
 }
 
@@ -119,6 +120,7 @@ main h2 {
     top: -5px;
     left: -5px;
 }
+
 /* .project-section img:hover {
     opacity: 1.0;
 } */
@@ -223,8 +225,9 @@ main h2 {
     right: 550px; */
     /* background-color: #c5c3c380; */
     color: #c5c3c380;
-    bottom: 50%;
-    right: 40%;
+    bottom: calc(50% - 15px);
+    right: calc(50% - 143px);
+    z-index: 2;
 }
 
 
