@@ -6,17 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Message</title>
     <style>
+        .message {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            padding-top: 250px;
+            gap: 310px;
+        }
+
         p {
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             color: #008000c2;
+            display: inline;
+            font-size: 25px;
+        }
+
+        button {
+            width: 120px;
+            height: 60px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bold;
+            background-color: #000000c9;
+            color: #f8f4f4;
+            /* position: fixed;
+            bottom: 20px; */
         }
     </style>
 </head>
 
 <body>
-    <div>
-        <p>Message was sended successfully !</p>
+    <div class="message">
+        <p>Message was sent successfully !</p>
+        <form class="contact-form" action="./index.html">
+            <button>Go to Main</button>
+        </form>
     </div>
+
 </body>
 
 </html>
